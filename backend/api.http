@@ -53,3 +53,9 @@ Content-Type: application/json
    
  "token": "b3856d86f5f1a6d421a5735de16262537983ae9aa50d916c0199100cc4c653e6"
 }
+
+###
+GET http://localhost:9090/user/get_all_users HTTP/1.1
+
+### Download Profile PDF
+GET http://localhost:9090/user/download_resume?id=6a7a1c013e4c428b3d04740b HTTP/1.1
