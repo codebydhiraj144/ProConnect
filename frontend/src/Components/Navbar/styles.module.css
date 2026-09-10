@@ -1,0 +1,25 @@
+.container {
+  padding: 1.2rem;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbarOptionContainer {
+  display: flex;
+  align-items: center;
+}
+
+.buttonJoin {
+  background-color: #CD8987;
+  border-radius: 10px;
+  padding-block: 0.5rem;
+  padding-inline: 1.2rem;
+  color: white;
+  font-size: 0.8rem;
+  cursor: pointer;
+  font-weight: bold;
+}

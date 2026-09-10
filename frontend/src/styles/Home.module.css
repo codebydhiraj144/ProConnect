@@ -1,0 +1,74 @@
+.container {
+    font-family: 'Poppins';
+    padding: 1.2rem;
+}
+
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding-inline: 2rem;
+    height: 80vh;
+}
+
+.mainContainer__left {
+    flex: 0.5;
+}
+
+
+.mainContainer__right {
+    flex: 0.5;
+}
+
+.mainContainer__left > p:nth-child(1) {
+  font-size: 2.8rem;
+  font-weight: 500;
+  line-height: 1.2;
+
+  /* Set gradient and make it twice the width of the text */
+  background: linear-gradient(90deg, #000000 0%, #9d9d9d 50%, #000000 100%);
+  background-size: 200% auto;
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+
+  /* Smooth breathing animation back and forth */
+  animation: animationHomePageBreathEffect 4s ease-in-out infinite alternate;
+}
+
+@keyframes animationHomePageBreathEffect {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 100% center;
+  }
+}
+
+
+.mainContainer__left > p:nth-child(2) {
+    color: #4D4D4D;
+    font-size: 1.6rem;
+}
+
+.mainContainer__left > div.Buttonjoin {
+    width: fit-content;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.2s;
+    margin-top: 0.8rem;
+    font-size: 1rem;
+    background-color: #d93d4a;
+    color: white;
+    padding-inline: 1.4rem;
+    padding-block: 0.6rem;
+    border-radius: 8px;
+    padding-block: 0.45rem;
+}
+.mainContainer__left > div.Buttonjoin:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
